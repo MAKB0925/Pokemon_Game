@@ -48,7 +48,13 @@ function startScreen() {
   fill(0);
   textAlign(CENTER, CENTER);
   text("start", width/2, height/2+25);
-
+  
+  fill(255, 255, 255);
+  rect(100, 290, 600, 70)
+  fill(0);
+  textAlign(100,270);
+  text("You will play as the Pikcahu!!! Using your mouse you will need to avoid getting captured by any POKEBALLS!!!",width/2, height/2+110);
+  text("In order to gain points eat the 50 berries.Any item that has fallen to the bottom will comeback to the top.",width/2, height/2+130);
 }
 
 //user input when mouse pressed
@@ -202,8 +208,8 @@ if (yList[j] > height) {
  function resetGame(){
   score = 0;
 
-  makeMad(20);
-  makeStar(20);
+  makeMad(50);
+  makeStar(50);
    
   // clear all arrays
   madX = [];
@@ -219,8 +225,8 @@ if (yList[j] > height) {
   starImage = [];
 
   // recreate objects
-  makeMad(20);
-  makeStar(20);
+  makeMad(50);
+  makeStar(50);
 }
 
 
